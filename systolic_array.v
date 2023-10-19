@@ -37,28 +37,28 @@ generate
         wire [PE_OUT_DATA_WIDTH - 1 : 0]   c_in;
         wire [PE_OUT_DATA_WIDTH - 1 : 0]   c_out;
 
-        if(m == 0)//从第0行开始
+        if(m == 0)//从第0列开始     横向流动的数据
         begin
             assign a_in = inp[n * INP_DATA_WIDTH+:INP_DATA_WIDTH];
-        end
-        else
-        begin
-            assign a_in = LOOP_INPUT_FORWARD[m-1].LOOP_OUTPUT_FORWARD[n].a_out;
-        end
-
-        if(n == 0)//从第0列开始
-        begin
-            assign c_in = 'd0;
-            assign b_path_in = wgt[m * WGT_DATA_WIDT+:WGT_DATA_WIDT];
             assign b_en_in = b_en[m+:1];
             assign b_path_en_in = b_path_en_in[m+:1];
         end
         else
         begin
+            assign a_in = LOOP_INPUT_FORWARD[m-1].LOOP_OUTPUT_FORWARD[n].a_out;
+            assign b_en_in = LOOP_INPUT_FORWARD[m-1].LOOP_OUTPUT_FORWARD[n].b_en_out;
+            assign b_path_en_in = LOOP_INPUT_FORWARD[m-1].LOOP_OUTPUT_FORWARD[n].b_path_en_out;
+        end
+        if(n == 0)//从第0行开始     纵向流动的数据
+        begin
+            assign c_in = 'd0;
+            assign b_path_in = wgt[m * WGT_DATA_WIDT+:WGT_DATA_WIDT];
+
+        end
+        else
+        begin
             assign c_in = LOOP_INPUT_FORWARD[m].LOOP_OUTPUT_FORWARD[n - 1].c_out;
             assign b_path_in = LOOP_INPUT_FORWARD[m].LOOP_OUTPUT_FORWARD[n-1].b_path_out;
-            assign b_en_in = LOOP_INPUT_FORWARD[m].LOOP_OUTPUT_FORWARD[n - 1].b_en_out;
-            assign b_path_en_in = LOOP_INPUT_FORWARD[m].LOOP_OUTPUT_FORWARD[n - 1].b_path_en_out;
         end
 
         PE #(

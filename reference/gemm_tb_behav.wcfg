@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="gemm_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="gemm_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="731.250 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,061.251 ns"></ZoomEndTime>
+      <Cursor1Time time="857.750 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="228"></NameColumnWidth>
+      <ValueColumnWidth column_width="111"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="34" />
+   <wvobject type="logic" fp_name="/gemm_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/gemm_tb/uut/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group35">
+      <obj_property name="label">wgt_addr</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/gemm_tb/uut/wgt_addr/state">
+         <obj_property name="ElementShortName">state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/wgt_addr/en">
+         <obj_property name="ElementShortName">en</obj_property>
+         <obj_property name="ObjectShortName">en</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/wgt_addr/mem_read_req_reg">
+         <obj_property name="ElementShortName">mem_read_req_reg</obj_property>
+         <obj_property name="ObjectShortName">mem_read_req_reg</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/wgt_addr/mem_read_addr">
+         <obj_property name="ElementShortName">mem_read_addr[13:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_read_addr[13:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/wgt_addr/mem_read_req">
+         <obj_property name="ElementShortName">mem_read_req</obj_property>
+         <obj_property name="ObjectShortName">mem_read_req</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/wgt_addr/ld_done">
+         <obj_property name="ElementShortName">ld_done</obj_property>
+         <obj_property name="ObjectShortName">ld_done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/wgt_addr/insn_done">
+         <obj_property name="ElementShortName">insn_done</obj_property>
+         <obj_property name="ObjectShortName">insn_done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/wgt_addr/uop_done">
+         <obj_property name="ElementShortName">uop_done</obj_property>
+         <obj_property name="ObjectShortName">uop_done</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/wgt_addr/uop_cnt">
+         <obj_property name="ElementShortName">uop_cnt[7:0]</obj_property>
+         <obj_property name="ObjectShortName">uop_cnt[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/wgt_addr/uop_bgn">
+         <obj_property name="ElementShortName">uop_bgn[12:0]</obj_property>
+         <obj_property name="ObjectShortName">uop_bgn[12:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/wgt_addr/uop_end">
+         <obj_property name="ElementShortName">uop_end[13:0]</obj_property>
+         <obj_property name="ObjectShortName">uop_end[13:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group19">
+      <obj_property name="label">inp_addr</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/inp_addr/mem_read_req">
+         <obj_property name="ElementShortName">mem_read_req</obj_property>
+         <obj_property name="ObjectShortName">mem_read_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/inp_addr/mem_read_addr">
+         <obj_property name="ElementShortName">mem_read_addr[12:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_read_addr[12:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/inp_addr/load_done">
+         <obj_property name="ElementShortName">load_done</obj_property>
+         <obj_property name="ObjectShortName">load_done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/inp_addr/insn_done">
+         <obj_property name="ElementShortName">insn_done</obj_property>
+         <obj_property name="ObjectShortName">insn_done</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group195">
+      <obj_property name="label">add</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group36">
+      <obj_property name="label">load_wgt_state</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/gemm_tb/uut/state_ld_wgt">
+         <obj_property name="ElementShortName">state_ld_wgt[2:0]</obj_property>
+         <obj_property name="ObjectShortName">state_ld_wgt[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group33">
+      <obj_property name="label">b_en_state</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/gemm_tb/uut/state_gen_en">
+         <obj_property name="ElementShortName">state_gen_en[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state_gen_en[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/update_b_en">
+         <obj_property name="ElementShortName">update_b_en</obj_property>
+         <obj_property name="ObjectShortName">update_b_en</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/b_en">
+         <obj_property name="ElementShortName">b_en[15:0]</obj_property>
+         <obj_property name="ObjectShortName">b_en[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group29">
+      <obj_property name="label">pe0_0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/gemm_tb/uut/systolic_array/\LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[0].pe_inst /a_reg">
+         <obj_property name="ElementShortName">a_reg[7:0]</obj_property>
+         <obj_property name="ObjectShortName">a_reg[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/systolic_array/\LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[0].pe_inst /b_reg">
+         <obj_property name="ElementShortName">b_reg[7:0]</obj_property>
+         <obj_property name="ObjectShortName">b_reg[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/systolic_array/\LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[0].pe_inst /b_path_reg">
+         <obj_property name="ElementShortName">b_path_reg[7:0]</obj_property>
+         <obj_property name="ObjectShortName">b_path_reg[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group98">
+      <obj_property name="label">pe0_1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group72">
+      <obj_property name="label">pe0_15</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group93">
+      <obj_property name="label">pe1_0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group204">
+      <obj_property name="label">pe1_15</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group54">
+      <obj_property name="label">path_en_state</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/gemm_tb/uut/b_path_en">
+         <obj_property name="ElementShortName">b_path_en[15:0]</obj_property>
+         <obj_property name="ObjectShortName">b_path_en[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group67">
+      <obj_property name="label">b_en_state</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/gemm_tb/uut/b_en">
+         <obj_property name="ElementShortName">b_en[15:0]</obj_property>
+         <obj_property name="ObjectShortName">b_en[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/update_b_en">
+         <obj_property name="ElementShortName">update_b_en</obj_property>
+         <obj_property name="ObjectShortName">update_b_en</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group346">
+      <obj_property name="label">load_inp_state</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/gemm_tb/uut/systolic_out">
+         <obj_property name="ElementShortName">systolic_out[319:0]</obj_property>
+         <obj_property name="ObjectShortName">systolic_out[319:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/systolic_out_dly">
+         <obj_property name="ElementShortName">systolic_out_dly[319:0]</obj_property>
+         <obj_property name="ObjectShortName">systolic_out_dly[319:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/load_acc_start">
+         <obj_property name="ElementShortName">load_acc_start</obj_property>
+         <obj_property name="ObjectShortName">load_acc_start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/load_inp_start">
+         <obj_property name="ElementShortName">load_inp_start</obj_property>
+         <obj_property name="ObjectShortName">load_inp_start</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/state_ld_inp">
+         <obj_property name="ElementShortName">state_ld_inp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state_ld_inp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/load_inp_cnt">
+         <obj_property name="ElementShortName">load_inp_cnt[6:0]</obj_property>
+         <obj_property name="ObjectShortName">load_inp_cnt[6:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group94">
+      <obj_property name="label">acc_addr</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/gemm_tb/uut/acc_addr/mem_read_addr">
+         <obj_property name="ElementShortName">mem_read_addr[12:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_read_addr[12:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/acc_addr/mem_read_req">
+         <obj_property name="ElementShortName">mem_read_req</obj_property>
+         <obj_property name="ObjectShortName">mem_read_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/acc_addr/addr_offset">
+         <obj_property name="ElementShortName">addr_offset[12:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_offset[12:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/acc_addr/addr_iter_out">
+         <obj_property name="ElementShortName">addr_iter_out[12:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_iter_out[12:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/acc_addr/addr_temp">
+         <obj_property name="ElementShortName">addr_temp[12:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_temp[12:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/acc_addr/uop_read_addr">
+         <obj_property name="ElementShortName">uop_read_addr[12:0]</obj_property>
+         <obj_property name="ObjectShortName">uop_read_addr[12:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/acc_addr/uop_read_req">
+         <obj_property name="ElementShortName">uop_read_req</obj_property>
+         <obj_property name="ObjectShortName">uop_read_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/acc_addr/uop_cnt">
+         <obj_property name="ElementShortName">uop_cnt[7:0]</obj_property>
+         <obj_property name="ObjectShortName">uop_cnt[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/acc_addr/uop_done">
+         <obj_property name="ElementShortName">uop_done</obj_property>
+         <obj_property name="ObjectShortName">uop_done</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/acc_addr/en">
+         <obj_property name="ElementShortName">en</obj_property>
+         <obj_property name="ObjectShortName">en</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/acc_addr/start">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group182">
+      <obj_property name="label">MEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/gemm_tb/inp_mem/s_read_req">
+         <obj_property name="ElementShortName">s_read_req</obj_property>
+         <obj_property name="ObjectShortName">s_read_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/inp_mem/s_read_addr">
+         <obj_property name="ElementShortName">s_read_addr[12:0]</obj_property>
+         <obj_property name="ObjectShortName">s_read_addr[12:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/inp_mem/s_read_data">
+         <obj_property name="ElementShortName">s_read_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">s_read_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/inp_mem/s_write_req">
+         <obj_property name="ElementShortName">s_write_req</obj_property>
+         <obj_property name="ObjectShortName">s_write_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/inp_mem/s_write_addr">
+         <obj_property name="ElementShortName">s_write_addr[12:0]</obj_property>
+         <obj_property name="ObjectShortName">s_write_addr[12:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/inp_mem/s_write_data">
+         <obj_property name="ElementShortName">s_write_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">s_write_data[127:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group69">
+      <obj_property name="label">inp_mem</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group107">
+      <obj_property name="label">insn</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/gemm_tb/uut/insn_TDATA">
+         <obj_property name="ElementShortName">insn_TDATA[255:0]</obj_property>
+         <obj_property name="ObjectShortName">insn_TDATA[255:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/insn_TREADY">
+         <obj_property name="ElementShortName">insn_TREADY</obj_property>
+         <obj_property name="ObjectShortName">insn_TREADY</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/insn_TVALID">
+         <obj_property name="ElementShortName">insn_TVALID</obj_property>
+         <obj_property name="ObjectShortName">insn_TVALID</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/insn_queue_en">
+         <obj_property name="ElementShortName">insn_queue_en</obj_property>
+         <obj_property name="ObjectShortName">insn_queue_en</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/insn_queue_start">
+         <obj_property name="ElementShortName">insn_queue_start</obj_property>
+         <obj_property name="ObjectShortName">insn_queue_start</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/insn_queue_start_reg">
+         <obj_property name="ElementShortName">insn_queue_start_reg</obj_property>
+         <obj_property name="ObjectShortName">insn_queue_start_reg</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/state_ctrl">
+         <obj_property name="ElementShortName">state_ctrl[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state_ctrl[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/insn_queue_start_reg">
+         <obj_property name="ElementShortName">insn_queue_start_reg</obj_property>
+         <obj_property name="ObjectShortName">insn_queue_start_reg</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/insn_queue_start">
+         <obj_property name="ElementShortName">insn_queue_start</obj_property>
+         <obj_property name="ObjectShortName">insn_queue_start</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group77">
+      <obj_property name="label">gemm_insn</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/insn_queue_en">
+         <obj_property name="ElementShortName">insn_queue_en</obj_property>
+         <obj_property name="ObjectShortName">insn_queue_en</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/gemm_tb/uut/insn_queue_start">
+         <obj_property name="ElementShortName">insn_queue_start</obj_property>
+         <obj_property name="ObjectShortName">insn_queue_start</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/gemm_tb/uut/insn_queue_data">
+         <obj_property name="ElementShortName">insn_queue_data[255:0]</obj_property>
+         <obj_property name="ObjectShortName">insn_queue_data[255:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/gemm_tb/uut/wgt_factor_in">
+      <obj_property name="ElementShortName">wgt_factor_in[13:0]</obj_property>
+      <obj_property name="ObjectShortName">wgt_factor_in[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gemm_tb/uut/wgt_factor_out">
+      <obj_property name="ElementShortName">wgt_factor_out[13:0]</obj_property>
+      <obj_property name="ObjectShortName">wgt_factor_out[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gemm_tb/uut/inp_factor_in">
+      <obj_property name="ElementShortName">inp_factor_in[12:0]</obj_property>
+      <obj_property name="ObjectShortName">inp_factor_in[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gemm_tb/uut/inp_factor_out">
+      <obj_property name="ElementShortName">inp_factor_out[12:0]</obj_property>
+      <obj_property name="ObjectShortName">inp_factor_out[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gemm_tb/uut/acc_factor_in">
+      <obj_property name="ElementShortName">acc_factor_in[12:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_factor_in[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gemm_tb/uut/acc_factor_out">
+      <obj_property name="ElementShortName">acc_factor_out[12:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_factor_out[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gemm_tb/uut/iter_in">
+      <obj_property name="ElementShortName">iter_in[13:0]</obj_property>
+      <obj_property name="ObjectShortName">iter_in[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gemm_tb/uut/iter_out">
+      <obj_property name="ElementShortName">iter_out[13:0]</obj_property>
+      <obj_property name="ObjectShortName">iter_out[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gemm_tb/uut/inp_num">
+      <obj_property name="ElementShortName">inp_num[9:0]</obj_property>
+      <obj_property name="ObjectShortName">inp_num[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gemm_tb/uut/inp_uop_bgn">
+      <obj_property name="ElementShortName">inp_uop_bgn[12:0]</obj_property>
+      <obj_property name="ObjectShortName">inp_uop_bgn[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gemm_tb/uut/inp_uop_end">
+      <obj_property name="ElementShortName">inp_uop_end[13:0]</obj_property>
+      <obj_property name="ObjectShortName">inp_uop_end[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gemm_tb/uut/acc_uop_bgn">
+      <obj_property name="ElementShortName">acc_uop_bgn[12:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_uop_bgn[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/gemm_tb/uut/acc_uop_end">
+      <obj_property name="ElementShortName">acc_uop_end[13:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_uop_end[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/gemm_tb/uut/reset_n_reg">
+      <obj_property name="ElementShortName">reset_n_reg</obj_property>
+      <obj_property name="ObjectShortName">reset_n_reg</obj_property>
+   </wvobject>
+</wave_config>
