@@ -1,6 +1,6 @@
 module systolic_array #(
-    parameter integer ARRAY_M = 32,//PE的行数
-    parameter integer ARRAY_N = 32,//PE的列数
+    parameter integer ARRAY_M = 8,//PE的行数
+    parameter integer ARRAY_N = 8,//PE的列数
     parameter integer INP_DATA_WIDTH = 8,//INP位宽
     parameter integer WGT_DATA_WIDTH = 8,//WGT位宽
     parameter integer MULT_OUT_WIDTH = INP_DATA_WIDTH + WGT_DATA_WIDTH,//PE中存储INP*WGT乘积的位宽
@@ -10,8 +10,8 @@ module systolic_array #(
     parameter integer PE_OUT_DATA_WIDTH = ARRAY_N * PE_OUT_WIDTH,//输出位宽等于PE行(列)数乘上每个PE的位宽
 ) (
     input wire clk,
-    input wire [INP_DATA_WIDTH - 1 : 0] inp,
-    input wire [WGT_DATA_WIDTH - 1 : 0] wgt,
+    input wire [INP_MEM_DATA_WIDTH - 1 : 0] inp,
+    input wire [WGT_MEM_DATA_WIDTH - 1 : 0] wgt,
     input wire [ARRAY_N - 1 : 0] b_en,
     input wire [ARRAY_N - 1 : 0] b_path_en,
     output wire [PE_OUT_DATA_WIDTH - 1 : 0] systolic_out
